@@ -50,7 +50,7 @@ if some_weird_condition
   do_something
 end
 
-#=D
+# =D
 do_something if some_weird_condition
 ```
 - Don't use unless with else - It confuses everyone =P
@@ -62,7 +62,7 @@ else
   puts "success"
 end
 
-#=D
+# =D
 if success?
   puts "success"
 else
@@ -135,9 +135,5 @@ end
 ------------------------------------------
 
 #Keyword Arguments
-
------------------------------------------
-
-# Above all else
 
 -----------------------------------------
