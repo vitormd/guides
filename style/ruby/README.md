@@ -18,7 +18,8 @@ some(arg).other
 - Prefer double quotes for strings.-
 - Use def self.method to define singleton methods. This makes the methods more resistant to refactoring.
 - Indent private and protected methods at the same column as the public methods. Just leave one blank line separating them.
-
+- Prefer string interpolation instead of string concatenation
+- Use double-quoted strings. The performance isn't that much different.
 
 ----------------------------------------------
 
@@ -105,13 +106,20 @@ end
 
 - Use the new hash syntax when using Ruby 1.9.
 ```ruby
-# =(
-h = { :names => 'Joaninha' }
+  # =(
+  h = { :names => 'Joaninha' }
 
-#=D
-h = { names: 'Joaninha' }
+  #=D
+  h = { names: 'Joaninha' }
 ```
+- Prefer %w to the literal array syntax when you need an array of strings.
+```ruby
+  # =(
+  STATUS = ["ongoing", "formalization", "closed", "no_closed"]
 
+  # =D
+  STATUS = %w(ongoing formalization closed no_closed)
+```
 
 --------------------------------------------
 
@@ -122,7 +130,7 @@ h = { names: 'Joaninha' }
 - Use SCREAMING_SNAKE_CASE for other constants.
 - Use ? suffix for predicate methods (the ones that return a boolean value).
 ```ruby
-Array#empty?
+  Array#empty?
 ```
 --------------------------------------------
 
@@ -130,13 +138,6 @@ Array#empty?
 
 --------------------------------------------
 
-#Collections
-
---------------------------------------------
-
-#Strings
-
--------------------------------------------
 
 #Regular Expressions
 
