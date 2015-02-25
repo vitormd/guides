@@ -79,6 +79,7 @@ name ||= "Chimene"
 ```ruby
 # =(
 result = hash.map { |k, v| v + 1 }
+
 # =D
 result = hash.map { |_, v| v + 1 }
 ```
@@ -106,11 +107,11 @@ end
 
 - Use the new hash syntax when using Ruby 1.9.
 ```ruby
-  # =(
-  h = { :names => 'Joaninha' }
+    # =(
+    h = { :names => 'Joaninha' }
 
-  #=D
-  h = { names: 'Joaninha' }
+    #=D
+    h = { names: 'Joaninha' }
 ```
 - Prefer %w to the literal array syntax when you need an array of strings.
 ```ruby
@@ -130,7 +131,7 @@ end
 - Use SCREAMING_SNAKE_CASE for other constants.
 - Use ? suffix for predicate methods (the ones that return a boolean value).
 ```ruby
-  Array#empty?
+  Array.empty?
 ```
 --------------------------------------------
 
