@@ -108,10 +108,10 @@ end
 - Use the new hash syntax when using Ruby 1.9.
 ```ruby
     # =(
-    h = { :names => 'Joaninha' }
+    h = { :names => "Joaninha" }
 
     #=D
-    h = { names: 'Joaninha' }
+    h = { names: "Joaninha" }
 ```
 - Prefer %w to the literal array syntax when you need an array of strings.
 ```ruby
