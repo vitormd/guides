@@ -14,15 +14,16 @@ some(arg).other
 ```
 - Use empty lines between defs and to break up a method into logical paragraphs.
 - Use {...} for single-line blocks. Use do..end for multi-line blocks.
-- Use ? suffix for predicate methods.
 - Use CamelCase for classes and modules, snake_case for variables and methods, SCREAMING_SNAKE_CASE for constants.
-- Prefer double quotes for strings.
+- Prefer double quotes for strings.-
+- Use def self.method to define singleton methods. This makes the methods more resistant to refactoring.
+- Indent private and protected methods at the same column as the public methods. Just leave one blank line separating them.
+
 
 ----------------------------------------------
 
 #Syntax
 - Use each, not for, for iteration. (unless you know exactly what you are doing!)
-- Indent private methods at the same column as the public methods.
 - Indent when as deep as case. Do the same for if and else as well. Use the same style for arguments.
 ```ruby
 this_is_an_example(first: 1,
@@ -102,16 +103,27 @@ rescue SomeCrazyError => e
 end
 ```
 
+- Use the new hash syntax when using Ruby 1.9.
+```ruby
+# =(
+h = { :names => 'Joaninha' }
+
+#=D
+h = { names: 'Joaninha' }
+```
+
 
 --------------------------------------------
 
 #Naming
 
-
---------------------------------------------
-
-#Classes
-
+- Use snake_case for methods and variables.
+- Use CamelCase for classes and modules.
+- Use SCREAMING_SNAKE_CASE for other constants.
+- Use ? suffix for predicate methods (the ones that return a boolean value).
+```ruby
+Array#empty?
+```
 --------------------------------------------
 
 #Exceptions
@@ -137,3 +149,4 @@ end
 #Keyword Arguments
 
 -----------------------------------------
+
