@@ -1,18 +1,16 @@
 #Git Rules
 A guide to make your repos maintainable
 
-TO DISCUSS WITH THE TEAM
-- Prefix the branch name with your initials.
-```
-My name Raphael Monteiro
-git checkout -b rm_new_branch
-```
-
 - Perform work in a feature branch. Name branches using snake_case (ex. new_feature)
 ```
 git checkout master
 git pull origin master
 git checkout -b new_branch
+```
+- Prefix the branch name with your initials. (To-Do)
+```
+My name Raphael Monteiro
+git checkout -b rm_new_branch
 ```
 
 - Rebase frequently to incorporate upstream changes. But take care to use rebase when there are more than one member team using the same branch.
@@ -35,9 +33,14 @@ git add -i
 git commit -m "[branch_name] My commit message"
 ```
 
-- Write your commit message in the imperative: "Fix bug" and not "Fixed bug" or "Fixes bug".Capitalized, short (50 chars or less) summary
+- Write your commit message in the imperative: "Fix bug" and not "Fixed bug" or "Fixes bug". Capitalized, short (50 chars or less) summary
 
 - Use a pull request for code reviews.(https://help.github.com/articles/using-pull-requests/)
+```
+[Story #205] The name of the story as the name of the pull request
+The body message with a descriptive of what you have done.
+[https://Link to the story]
+```
 
 - Anything in the master branch is deployable. Mind the gap ;)
 
