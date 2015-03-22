@@ -1,4 +1,5 @@
-#Using Git well to make your repos maintainable
+#Git Rules
+A guide to make your repos maintainable
 
 - TO DISCUSS WITH THE TEAM
 Prefix the branch name with your initials.
