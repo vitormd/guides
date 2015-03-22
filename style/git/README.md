@@ -1,5 +1,12 @@
 #Using Git well to make your repos maintainable
 
+- TO DISCUSS WITH THE TEAM
+Prefix the branch name with your initials.
+```
+My name Raphael Monteiro
+git checkout -b rm_new_branch
+```
+
 - Perform work in a feature branch. Name branches using snake_case (ex. new_feature)
 ```
 git checkout master
