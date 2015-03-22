@@ -1,4 +1,4 @@
-#Using Git well to make your repos maintainable. (based on: thoughtbot/guides/protocol/git)
+#Using Git well to make your repos maintainable
 
 - Perform work in a feature branch. Name branches using snake_case (ex. new_feature)
 ```
@@ -38,3 +38,7 @@ git commit -m "[branch_name] My commit message"
 git branch --delete <branch-name>
 git push origin --delete <branch-name>
 ```
+
+####Sources:
+- http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
+- https://github.com/thoughtbot/guides/tree/master/protocol/git
