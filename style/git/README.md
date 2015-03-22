@@ -1,8 +1,8 @@
 #Git Rules
 A guide to make your repos maintainable
 
-- TO DISCUSS WITH THE TEAM
-Prefix the branch name with your initials.
+TO DISCUSS WITH THE TEAM
+- Prefix the branch name with your initials.
 ```
 My name Raphael Monteiro
 git checkout -b rm_new_branch
