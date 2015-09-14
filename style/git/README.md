@@ -46,8 +46,8 @@ The body message with a descriptive of what you have done.
 
 - Delete local and remote feature branches after merging.
 ```
-git branch --delete <branch-name>
-git push origin --delete <branch-name>
+git branch --delete <branch_name>
+git push origin --delete <branch_name>
 ```
 
 ####Sources:
