@@ -14,12 +14,23 @@ some(arg).other
 ```
 - Use empty lines between defs and to break up a method into logical paragraphs.
 - Use {...} for single-line blocks. Use do..end for multi-line blocks.
-- Use CamelCase for classes and modules, snake_case for variables and methods, SCREAMING_SNAKE_CASE for constants.
 - Prefer double quotes for strings.-
 - Use def self.method to define singleton methods. This makes the methods more resistant to refactoring.
 - Indent private and protected methods at the same column as the public methods. Just leave one blank line separating them.
 - Prefer string interpolation instead of string concatenation
 - Use double-quoted strings. The performance isn't that much different.
+
+--------------------------------------------
+
+#Naming
+
+- Use snake_case for methods and variables.
+- Use CamelCase for classes and modules.
+- Use SCREAMING_SNAKE_CASE for other constants.
+- Use ? suffix for predicate methods (the ones that return a boolean value).
+```ruby
+  Array.empty?
+```
 
 ----------------------------------------------
 
@@ -122,17 +133,6 @@ end
   STATUS = %w(ongoing formalization closed no_closed)
 ```
 
---------------------------------------------
-
-#Naming
-
-- Use snake_case for methods and variables.
-- Use CamelCase for classes and modules.
-- Use SCREAMING_SNAKE_CASE for other constants.
-- Use ? suffix for predicate methods (the ones that return a boolean value).
-```ruby
-  Array.empty?
-```
 --------------------------------------------
 
 #Exceptions
