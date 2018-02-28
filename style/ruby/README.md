@@ -1,4 +1,4 @@
-#Coding Style
+# Coding Style
 - Use 2 spaces for indentation, no tabs.
 - Use spaces around operators, after commas, colons and semicolons, around { and before } and =.
 ```ruby
@@ -22,7 +22,7 @@ some(arg).other
 
 --------------------------------------------
 
-#Naming
+# Naming
 
 - Use snake_case for methods and variables.
 - Use CamelCase for classes and modules.
@@ -130,25 +130,33 @@ end
   STATUS = ["ongoing", "formalization", "closed", "no_closed"]
 
   # =D
+  STATUS = %w[ongoing formalization closed no_closed]
+```
+- Prefer square brackets over parentheses for % literals
+```ruby
+  # =(
   STATUS = %w(ongoing formalization closed no_closed)
+  
+  # =D
+  STATUS = %w[ongoing formalization closed no_closed]
 ```
 
 --------------------------------------------
 
-#Exceptions
+# Exceptions
 
 --------------------------------------------
 
 
-#Regular Expressions
+# Regular Expressions
 
 ------------------------------------------
 
-#Percent Literals
+# Percent Literals
 
 ------------------------------------------
 
-#Keyword Arguments
+# Keyword Arguments
 
 -----------------------------------------
 
